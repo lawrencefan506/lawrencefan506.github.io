@@ -76,8 +76,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 
 ## Screenshots for PRA
 Activity 1 
-![alt text](img/act1.png)
+![alt text](assets/img/act1.png)
 
 Activity 2
+![alt text](assets/img/act2-repo.png)
+
+
 
 
