@@ -81,6 +81,11 @@ Activity 1
 Activity 2
 ![alt text](assets/img/act2-repo.png)
 
+![alt text](assets/img/act2-homepage-a.png)
 
+Activity 3
+![alt text](assets/img/act3-repo.png)
+
+![alt text](assets/img/act3-homepage.png)
 
 
