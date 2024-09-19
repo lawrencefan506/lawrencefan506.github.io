@@ -88,4 +88,17 @@ Activity 3
 
 ![alt text](assets/img/act3-homepage.png)
 
+Activity 4
+
+![alt text](assets/img/act4-repo.png)
+
+![alt text](assets/img/act4-homepage.png)
+
+Activity 5
+![alt text](assets/img/act5-load-more-projects.png)
+
+![alt text](assets/img/act5-load-more-projects.png)
+
+
+
 

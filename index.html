@@ -397,12 +397,15 @@
 
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
+      <h3 class="page-title white-text teal hidden">Projects</h3>
       <div class="container">
         <div class="row">
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <!-- PROJECTS LIST -->
+
+          <!-- TTC Project -->
+          <div class="col s12 m6 l4" data-date="2024-09-19">
+            <div class="card medium hidden">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -410,7 +413,7 @@
                 <span class="card-title activator teal-text hoverline">Toronto Transit Commission (TTC) Special Sightings Tracker<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A Django website that displays live TTC “Special buses” data, which are buses operating on routes not part of their home garage.
+                  A Django website that displays live TTC “Special buses” data.
                 </p>
               </div>
               <div class="card-reveal">
@@ -419,6 +422,7 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
+                  <li>June 2024 - Present</li>
                   <li><b>Tools:</b> Django, HTML, CSS, PostgreSQL</li>
                   <li>Iteratively improving the data processing algorithm to reduce computing power and loading times.</li>
                   <li>Querying real time data from the TTC’s NextBus API and storing historical data into a PostgreSQL database.</li>
@@ -438,8 +442,9 @@
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <!-- COM490 Project -->
+          <div class="col s12 m6 l4" data-date="2023-07-01">
+            <div class="card medium hidden">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
               </div>
@@ -456,6 +461,7 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
+                  <li>February 2023 - July 2023</li>
                   <li><b>Tools:</b> Python, Hadoop, Git LFS</li>
                   <li>Integrated risk assessment algorithms with Pyspark using historical punctuality data from each individual bus, train, and tram departure.</li>
                   <li>Implemented routing algorithms using GTFS data.</li>
@@ -474,46 +480,9 @@
             </div>
           </div>
 
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Local Library Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>
-                  <li>Users can view list and detail information for books and authors.</li>
-                  <li>Admin users can create and manage models.</li>
-                  <li>Librarians can renew reserved books.</li>
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/django-local-library"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
+          <!-- ECE297 Project -->
+          <div class="col s12 m6 l4" data-date="2022-04-01">
+            <div class="card medium hidden">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
                 style="height: 100%; width: 100%" class="activator" />
@@ -531,6 +500,7 @@
                 <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
+                  <li>January 2022 - April 2022</li>
                   <li><b>Tools:</b> C++, OpenGUI</li>
                   <li>Implemented Dijkstra and A* algorithms, using heuristics to increase efficiency.</li>
                   <li>Parsed Open Street Map data such as parks, subway lines, and points of interest, visualizing them onto a graphical user interface.</li>
@@ -552,6 +522,21 @@
       </div>
     </section>
 
+    <!-- Most recent projects -->
+    <section id="recent-projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Recent Projects</h3>
+      <div class="container">
+        <div class="row" id="recent-projects-list">
+          <!-- The most recent project will be loaded here -->
+        </div>
+        <div class="row">
+          <div class="col s12 center">
+            <button id="loadMoreBtn" class="btn waves-effect waves-light">Show More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
       <h3 class="page-title white-text teal">Skills</h3>
@@ -783,6 +768,8 @@
     });
   </script>
 
+  <!-- activity 5 js script -->
+  <script src="assets/vendor/typed.js/activity5.js"></script>
 
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
